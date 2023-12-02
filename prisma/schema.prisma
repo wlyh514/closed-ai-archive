@@ -1,0 +1,35 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id                  Int                   @id @default(autoincrement())
+  email               String                @unique
+  name                String                @unique
+  secret              String        
+  createdAt           DateTime              @default(now())
+  updatedAt           DateTime              @updatedAt
+  verified            Boolean               @default(false)
+  token               String        
+  pushSubcriptions    PushSubscription[]    @relation("user-pushsubscription")
+}
+
+model PushSubscription {
+  id                  String        @default(uuid()) @id
+
+  endpoint            String
+  expirationDate      String?
+  p256dhKey           String
+  
+
+  userId              Int
+  belongsTo           User          @relation("user-pushsubscription", references: [id], fields: [userId])
+}

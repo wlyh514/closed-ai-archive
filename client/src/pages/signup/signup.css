@@ -1,0 +1,14 @@
+.password-rule-container {
+  border: 1px solid white;
+  margin-top: 15px;
+  width: 20%;
+  padding: 10px 20px;
+  background-color: var(--secondary-color);
+  text-align: left;
+}
+
+@media (max-width: 576px) {
+  .password-rule-container {
+    width: 80%;
+  }
+}

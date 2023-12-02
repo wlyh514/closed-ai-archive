@@ -1,0 +1,17 @@
+.confirm-verify-blurb {
+  color: white;
+  background-color: var(--primary-color);
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.verify-error {
+  color: red;
+}
+
+.verify-success {
+  color: var(--accent-color);
+}

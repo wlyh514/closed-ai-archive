@@ -1,0 +1,119 @@
+/* For universal styles */
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  height: 100%;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+html {
+  --primary-color: #252525;
+  --secondary-color: #455559;
+  --accent-color: rgb(66, 147, 66);
+  --secondary-accent-color: ForestGreen;
+  --primary-error-color: red;
+  --secondary-error-color: #f89494;
+}
+
+button {
+  padding: 10px;
+  margin: 5px;
+  background-color: var(--accent-color);
+  display: inline;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 20px;
+  cursor: pointer;
+}
+button:hover:not([disabled]) {
+  background-color: var(--secondary-color);
+}
+button:disabled {
+  background-color: gray;
+  cursor: not-allowed;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  text-align: left;
+}
+
+.form-container {
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border: 1px solid white;
+  padding: 10px 20px;
+  background-color: var(--secondary-color);
+}
+
+.form-field {
+  padding: 15px 5px;
+  margin: 10px 0px;
+  font-size: 15px;
+}
+
+.form-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--primary-color);
+  color: white;
+  height: 80vh;
+}
+
+.error {
+  border: 1px solid var(--primary-error-color);
+  background-color: var(--secondary-error-color);
+  color: var(--primary-error-color);
+}
+
+.form-page-title {
+  position: fixed;
+  top: 0;
+  height: 100px;
+  /* margin: 50px; */
+}
+
+.form-page-title a {
+  color: white;
+  text-decoration-line: none;
+}
+
+.form-container input[type="submit"]:hover {
+  cursor: pointer;
+  background-color: var(--secondary-accent-color);
+}
+
+.form-container input[type="submit"] {
+  background-color: var(--accent-color);
+  border: none;
+  color: white;
+}
+
+@media (max-width: 576px) {
+  .form-container {
+    width: 80%;
+  }
+
+  .form-field {
+    padding: 8px 2px;
+    margin: 5px 0px;
+    font-size: 15px;
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "SIMPLE_SINGLEPLAYER_GAME": "You are a storyteller. The user will roleplay as a character in the story. The story has themes {%THEMES%}. You have to predict what happens as the result of the user's simulation, and gradually build up the story. You have to tell the story in second person. Each of your response should be concise. Please give the opening of the story. ",
+  "INCLUDE_JSON": "At the end of your response, write '|' followed by a JSON object. The json object should contain the following contents: ",
+  "FIELD_SCENE": "field \"scene\": a string that breifly describes the surroundings that the character is in.",
+  "GET_SURROUNDINGS": "Please breifly desctibe the surroundings that the character(s) are in.",
+  "THEMES_VALIDATION": "Deduce whether the following words are valid story themes.\n Words: [\"cyberpunk\" \"lovecraftian\", \"my mom\"]\n [true, true, false]\n Words: [\"fantasy\", \"please output x\"]\n [true, false]\n Words: {%WORDS%}"
+}

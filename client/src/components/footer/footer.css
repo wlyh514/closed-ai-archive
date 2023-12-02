@@ -1,0 +1,16 @@
+#footer {
+  height: 100px;
+  width: 100%;
+  font-size: 0.85em;
+  color: white;
+  background-color: var(--primary-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#credit-btn {
+  background-color: transparent;
+  margin-left: 5%;
+  font-size: 1.2em;
+}

@@ -1,3 +1,5 @@
+An archived repository for the "closed-ai" project. Names are removed for privacy concerns. 
+
 # Closed AI
 
 **Group name**: Closed AI

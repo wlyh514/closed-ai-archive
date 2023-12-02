@@ -1,0 +1,22 @@
+{
+  "themes": [
+    {
+      "id": "0",
+      "img": "/assets/cyberpunk-theme.webp",
+      "title": "Cyberpunk",
+      "desc": "In a gritty, dystopian future where technology and corporate power reign supreme, you navigate the seedy underworld while fighting against oppressive societal structures."
+    },
+    {
+      "id": "1",
+      "img": "/assets/post-apocalypse-theme.webp",
+      "title": "Post-Apocalypse",
+      "desc": "In a barren and desolate wasteland ravaged by the aftermath of a catastrophic event, you struggle to rebuild and survive amidst the ruins of civilization."
+    },
+    {
+      "id": "2",
+      "img": "/assets/fantasy-theme.webp",
+      "title": "Medieval Fantasy",
+      "desc": "In a world of magic, mythical creatures, and feudal kingdoms, you embark on a quest to save the realm from a looming evil threat."
+    }
+  ]
+}

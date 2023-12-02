@@ -1,0 +1,104 @@
+.description {
+  text-align: left;
+  height: 800px;
+  display: flex;
+  color: white;
+  flex-direction: column;
+  justify-content: center;
+  animation: 0.75s ease-in fade-in;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.description .container {
+  animation: 1.25s ease-in fade-in;
+}
+
+.description h4 {
+  font-size: 2em;
+}
+
+.description button {
+  font-size: 2em;
+  width: 30%;
+}
+
+.about {
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--primary-color);
+  color: white;
+}
+
+.about-info {
+  font-size: 1.3em;
+}
+
+.themes {
+  margin-bottom: 50px;
+}
+
+.card-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.landing-title {
+  font-size: 4em;
+  font-weight: bold;
+  margin: 20px 0px;
+}
+
+.container {
+  margin: 0 auto;
+  width: 80%;
+}
+
+#landing h1 {
+  font-size: 4em;
+}
+
+@media (max-width: 576px) {
+  .card-section {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .landing-title {
+    font-size: 2em;
+  }
+
+  .description {
+    height: 400px;
+    background-image: none !important;
+    color: black;
+  }
+
+  .description h4 {
+    font-size: 1.5em;
+  }
+
+  .description button {
+    font-size: 1.5em;
+    width: 65%;
+  }
+
+  .about-info {
+    font-size: 1.05em;
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
