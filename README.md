@@ -1,4 +1,9 @@
-An archived repository for the "closed-ai" project. Names are removed for privacy concerns. 
+An archived repository for the "closed-ai" project. Names are removed for privacy concerns.
+
+User credentials for testing: 
+
+- Username: `voidptr_t`
+- Password: `123$%^qweRTY`
 
 # Closed AI
 
